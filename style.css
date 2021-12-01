@@ -1,0 +1,71 @@
+body {
+  background-image: linear-gradient(rgb(70, 127, 153), rgb(155, 64, 64));
+  background-repeat: no-repeat;
+  /* background-position: 100%; */
+  /* background-size: 100%; */
+  height: 61rem;
+  align-items: center;
+  justify-content: center;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.area {
+  text-align: center;
+  font-size: 6.5em;
+  color: #2e424b;
+  letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: blur 0.75s ease-out infinite;
+  text-shadow: 0px 0px 5px #ff0, 0px 0px 7px #fff;
+}
+
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff,
+      0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff,
+      0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff,
+      0px 0px 50px #7b96b8, 0px 0px 150px #7b96b8, 0px 10px 100px #7b96b8,
+      0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8,
+      0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
+  }
+}
+
+/*FOOTER*/
+#footer {
+  color: #fff;
+  font-size: 10px;
+  position: fixed;
+  bottom: 0;
+  font-weight: 200;
+  padding: 10px 20px;
+}
+a {
+  color: #c6c6c6;
+}
+
+#temperature {
+  margin-top: 10%;
+  margin-left: 40%;
+  /* background-color: black; */
+  width: 50vh;
+  height: 40vh;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.21);
+}
+
+.inner {
+  margin-top: 5vh;
+  font-size: 30px;
+}
+
+.input {
+  border-radius: 15%;
+  background-color: darkcyan;
+}
